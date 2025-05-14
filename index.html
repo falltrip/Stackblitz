@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>박스 모델 연습</title>
+    <title>Flexbox 연습</title>
     <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
       .box {
-        width: 300px;
-        background-color: #fff8dc;
-        color: #5a3e2b;
-        padding: 20px;
-        margin: 30px;
-        border: 2px solid #ccc;
+        width: 100px;
+        height: 100px;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .blue {
+        background-color: blue;
       }
     </style>
   </head>
   <body>
-    <div class="box">
-      이것은 박스 모델 연습입니다!
+    <div class="container">
+      <div class="box red"></div>
+      <div class="box green"></div>
+      <div class="box blue"></div>
     </div>
   </body>
 </html>
